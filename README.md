@@ -10,6 +10,7 @@
 ##### Tools Used: SQL Server Management Studio (SSMS), Power BI, Excel
 ##### Data Sources: PedalPoint dataset file (bike_share_yr_0.csv, bike_share_yr_1.csv, cost_table.csv)
 ##### Dashboard Link: Google Drive - Dashboard Visuals
+##### Refer to the PedalPoint_documentation for detailed visual and written documentation.
 
 
 <br>
