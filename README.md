@@ -208,7 +208,9 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 <BR>
 <BR>
 
-### Data Insight Snapshot
+## Efficiency Insights and Price Recommendation
+
+#### Data Insight Snapshot
 
 | Metric                 | 2021      | 2022     | Total 	   |
 |------------------------|-----------|--------- |------------------|
@@ -300,7 +302,7 @@ Revenue by season (Registered Riders only):
 <BR>
 
 
-### Timeline Estimate
+## Timeline Estimate
 Based on working day format:
 
 #### Day 1:
@@ -342,4 +344,7 @@ Based on working day format:
 <BR>
 <BR>
 
+**Refer to the PedalPoint_documentation for detailed visual and written documentation.**
+
+<br>
 
