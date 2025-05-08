@@ -198,8 +198,11 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 
 ### About Metrics and Business Questions Answered
 1. Hourly Revenue Analysis: Displayed Average Revenue per Hour across all days and filtered by weekday. Added a Tooltip to also display Profit per Hour alongside Average Revenue, visually represented by Matrix.
+
 2. Riders’ Profit and Revenue Trends: Visualized monthly and yearly using a column chart, with an integrated Tooltip that highlights Rider trends alongside Revenue and Profit, including month-over-month (MoM) differences vs last month.
+
 3. Seasonal Revenue: Grouped Revenue by season (1-4), visually represented with Clustered Bar Chat.
+
 4. Rider Demographics: Categorized riders by rider_type (Casual vs Registered) to analyze their contribution to Total Revenue, visualized using a donut chart.
 
 <BR>
@@ -207,18 +210,18 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 
 ### Data Insight Snapshot
 
-| Metric                 | 2021    | 2022    | 2021–2022 Total |
-|------------------------|---------|---------|------------------|
-| Total Revenue          | $4.96M  | $10.23M | $15.19M          |
-| Total Profit           | $3.42M  | $7.03M  | $10.45M          |
-| Total Cost             | $1.54M  | $3.20M  | $4.74M           |
-| Total Riders           | 1.24M   | 2.05M   | 3.29M            |
-| Cost per Unit Profit   | $0.45   | $0.45   | $0.45            |
-| Profit per Unit Cost   | $2.22   | $2.20   | $2.20            |
-| Cost per Rider         | $1.24   | $1.56   | $1.44            |
-| Profit per Rider       | $2.75   | $3.43   | $3.17            |
-| Cost Margin            | 31.09%  | 31.27%  | 31.21%           |
-| Profit Margin          | 68.91%  | 68.73%  | 68.79%           |
+| Metric                 | 2021      | 2022     | Total 	   |
+|------------------------|-----------|--------- |------------------|
+| Total Revenue          | $4.96M    | $10.23M  | $15.19M          |
+| Total Profit           | $3.42M    | $7.03M   | $10.45M          |
+| Total Cost             | $1.54M    | $3.20M   | $4.74M           |
+| Total Riders           | 1.24M     | 2.05M    | 3.29M            |
+| Cost per Unit Profit   | $0.45     | $0.45    | $0.45            |
+| Profit per Unit Cost   | $2.22     | $2.20    | $2.20            |
+| Cost per Rider         | $1.24     | $1.56    | $1.44            |
+| Profit per Rider       | $2.75     | $3.43    | $3.17            |
+| Cost Margin            | 31.09%    | 31.27%   | 31.21%           |
+| Profit Margin          | 68.91%    | 68.73%   | 68.79%           |
 
 <BR>
 <BR>
@@ -266,18 +269,22 @@ Revenue by season:
 - Season 3:  $4.9M
 - Season 4:  $3.9M
 
-<BR>
+Revenue by season (Registered Riders only):
+- Season 1: $1.9M
+- Season 2: $3.3M
+- Season 3: $3.8M
+- Season 4: $3.3M
 
->  Season 2 and Season 3 generate 59% of Total Revenue.
+> Season 2, Season 3 and Season 4 generate 85% of Registered riders’ Total Revenue ($12.3M).
 > 
->  These are company's peak demand periods.
+> These are company's peak demand periods.
 
 <BR>
-
 
 #### The Recommendation:
-- Dynamic seasonal pricing, apply 5-6% increase during Season 2 and Season 3 for both rider types.
-- Leave pricing unchanged in Season 1 and Season 4.
+•	Dynamic seasonal pricing. Apply 5-6% increase during Season 2, Season 3 and Season 4 for Registered rider types.
+•	Leave pricing unchanged in Season 1.
+
 
 
 <BR>
