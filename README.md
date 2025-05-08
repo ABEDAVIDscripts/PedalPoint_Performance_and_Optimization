@@ -197,13 +197,13 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 <BR>
 
 ### About Metrics and Business Questions Answered
-1. Hourly Revenue Analysis: Displayed Average Revenue per Hour across all days and filtered by weekday. Added a Tooltip to also display Profit per Hour alongside Average Revenue, visually represented by Matrix.
+1. **Hourly Revenue Analysis:** Displayed Average Revenue per Hour across all days and filtered by weekday. Added a Tooltip to also display Profit per Hour alongside Average Revenue, visually represented by Matrix.
 
-2. Riders’ Profit and Revenue Trends: Visualized monthly and yearly using a column chart, with an integrated Tooltip that highlights Rider trends alongside Revenue and Profit, including month-over-month (MoM) differences vs last month.
+2. **Riders’ Profit and Revenue Trends:** Visualized monthly and yearly using a column chart, with an integrated Tooltip that highlights Rider trends alongside Revenue and Profit, including month-over-month (MoM) differences vs last month.
 
-3. Seasonal Revenue: Grouped Revenue by season (1-4), visually represented with Clustered Bar Chat.
+3. **Seasonal Revenue:** Grouped Revenue by season (1-4), visually represented with Clustered Bar Chat.
 
-4. Rider Demographics: Categorized riders by rider_type (Casual vs Registered) to analyze their contribution to Total Revenue, visualized using a donut chart.
+4. **Rider Demographics:** Categorized riders by rider_type (Casual vs Registered) to analyze their contribution to Total Revenue, visualized using a donut chart.
 
 <BR>
 <BR>
@@ -252,6 +252,7 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 ### Strategic Recommendation For Price Increase in 2023
 
 #### 1. Rider Demographics:
+
 - Registered Riders : make up 81% (2,672,662) of the Total Base riders. These are the company's loyal and long-term users.
 - Casual Riders :  make up the remaining 19% (620,017). These users are less frequent and can be more price-tolerant.
 
@@ -282,12 +283,19 @@ Revenue by season (Registered Riders only):
 <BR>
 
 #### The Recommendation:
-•	Dynamic seasonal pricing. Apply 5-6% increase during Season 2, Season 3 and Season 4 for Registered rider types.
-•	Leave pricing unchanged in Season 1.
-
-
+- Dynamic seasonal pricing. Apply 5-6% increase during Season 2, Season 3 and Season 4 for Registered rider types.
+- Leave pricing unchanged in Season 1.
 
 <BR>
+
+### What To Consider During This Stage?
+1. Communication Strategy:
+	- Make sure pricing updates are communicated properly, especially to Registered Riders who are facing a seasonal increase for the first time.
+	- Offer loyalty rewards, bundle benefits, or advance notices to ease adoption.
+
+2. Behavioral Monitoring:
+	- After implementation, monitor Registered Rider usage during peak seasons to track any negative reaction early (reduced rides, cancellation of memberships, etc.).
+
 <BR>
 <BR>
 
@@ -296,37 +304,40 @@ Revenue by season (Registered Riders only):
 Based on working day format:
 
 #### Day 1:
-- Run SQL query to merge bike_share and cost tables
-- Connect and import dataset from SQL Server into Power BI
-- Perform initial data inspection and structure confirmation
+- Merge datasets in SQL
+- Import into Power BI
+- Initial data inspection and structure confirmation
 
 
 #### Day 2:
-- Perform data cleaning and transformations in Power Query
+- Clean and transform in Power Query
 - Create and configure a custom Date Table
-- Validate data types, remove duplicates, and apply transformations
+- Validate data types and structures
+- Data Modelling
 
 
-#### Day 3:
-- Build core KPIs (Revenue, Profit, Riders, Cost, etc.)
-- Create supporting DAX measures for trends and calculations
+#### Day 3-5:
+- Build KPIs & DAX Measures
+- Design layout using brand colors
 - Start dashboard layout design and theming with company colors
+- Create metrics to answer business objectives
 
 
-#### Day 4:
-- Finalize data visuals (Hourly Revenue, Seasonal Trends, Demographics)
-- Add tooltips, slicers, and interactivity features
+#### Day 6:
+- Add interactivity, tooltips and other supporting dax measures
+- Add visuals
 - Test filter logic and date selections
 
 
-#### Day 5-6:
-- Advice and Recommendation
-- Polish and review dashboard
+#### Day 7–10:
+- Polish dashboard
+- Generate insights
+	
 
-
-#### Day 7
-- Export visuals for reporting
-- Deliver final dashboard and documentation
+#### Day 10-12:
+- Final overall review
+- Export visuals
+- Deliver dashboard & documentation
 
 <BR>
 <BR>
