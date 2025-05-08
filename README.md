@@ -30,8 +30,8 @@ To create an interactive and visually intuitive dashboard that presents PedalPoi
 - Seasonal Revenue
 - Rider Demographics
 - Recommendation on raising prices next year
-- The dashboard is designed using the company’s color palette and structured for ease of navigation.
-- We need a preliminary version Asap, provide an estimated timeline for completion
+- The dashboard should be designed using the company’s color palette and structured for ease of navigation.
+- Provide a preliminary version Asap, also to provide an estimated timeline for completion
 
 <BR>
 <BR>
@@ -96,25 +96,107 @@ ADDCOLUMNS(
 <BR>
 <BR>
 
-### KPI Metrics
+### KPI Measures Implemented
 
 The following created DAX measures were implemented:
 - Total Revenue
+
+This metric represents the total income generated from bike rides by multiplying the number of riders by the price per ride. It reflects the gross earnings before subtracting operational costs. It is a primary indicator of business scale and growth over time.
+
+```Dax
+Total Revenue = SUM(Query1[Revenue])
+```
+<br>
+
 - Total Profit
+
+Total Profit is the net gain after subtracting the total cost (COGS) from total revenue. In this case, we already did the calculation inside SSMS to generate Profit Column. It shows how much money the company actually retains from its operations and is key to assessing the company’s financial health.
+
+```Dax:
+Total Profit = SUM(Query1[Profit])
+```
+<br>
+
 - Total Cost
+
+This reflects the cumulative operational expenses (Cost of Goods Sold) associated with each ride. It includes all costs tied to providing the service and is used to calculate profitability and efficiency.
+
+```Dax:
+Total Cost = SUM(Query1[Revenue]) - SUM(Query1[Profit])
+```
+<br>
+
 - Total Riders
+
+This shows the total number of users who rented bikes over the selected period. It’s a critical metric to evaluate customer reach, engagement, and demand trends.
+
+```Dax:
+Total Rider = SUM(Query1[riders])
+```
+<br>
+
 - Profit Margin
+
+This ratio (Profit ÷ Revenue) expresses the percentage of revenue retained as profit. A high margin indicates efficient cost management and good pricing strategy. It remained stable at 68.8% across both years in the analysis.
+
+```Dax:
+Profit Margin = FORMAT(DIVIDE(SUM(Query1[Profit]), SUM(Query1[Revenue])), "0.00%")
+```
+<br>
+
 - Cost Margin
+
+Calculated as (Cost ÷ Revenue), this shows the portion of revenue consumed by costs. In this case, the cost margin hovered around 31.2%, indicating strong operational efficiency.
+
+```Dax:
+Cost Margin = FORMAT(DIVIDE([Total Cost], SUM(Query1[Revenue])), "0.00%")
+```
+<br>
+
 - Cost per Rider
+
+The average cost incurred to serve each individual rider. This helps evaluate whether operations are scaling efficiently with rider growth. 
+
+```Dax:
+Cost per Rider = DIVIDE((SUM(Query1[Revenue]) - SUM(Query1[Profit])), SUM(Query1[riders]))
+```
+<br>
+
 - Profit per Rider
+
+The net earnings per rider after accounting for cost. It demonstrates how valuable each customer is to the business. Shows profit earn per user.
+
+```Dax:
+Profit per Rider = DIVIDE(SUM(Query1[Profit]), SUM(Query1[riders]))
+```
+<br>
+
 - Cost per Unit Profit
+
+Shows how much cost is required to generate $1 profit. A lower value indicates higher profitability. It remained stable at $0.45, signaling operational consistency.
+
+```Dax:
+Cost per Unit Profit = DIVIDE((SUM(Query1[Revenue]) - SUM(Query1[Profit])), SUM(Query1[Profit]))
+```
+<br>
+
 - Profit per Unit Cost
+
+This reflects the profit earned per dollar spent. It’s a profitability efficiency metric. A value of $2.20 means every $1 spent returns $2.20 in profit. A strong indicator of business performance.
+
+```Dax:
+Profit per Unit Cost = DIVIDE(SUM(Query1[Profit]), (SUM(Query1[Revenue]) - SUM(Query1[Profit])))
+```
+<br>
+
 - Supporting Dax Measures for Trends and Calculations
 
+Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, Profit, Riders, Costs) and support advanced analytical capabilities
+
 <BR>
 <BR>
 
-### Business Questions Answered
+### About Metrics and Business Questions Answered
 1. Hourly Revenue Analysis: Displayed Average Revenue per Hour across all days and filtered by weekday. Added a Tooltip to also display Profit per Hour alongside Average Revenue, visually represented by Matrix.
 2. Riders’ Profit and Revenue Trends: Visualized monthly and yearly using a column chart, with an integrated Tooltip that highlights Rider trends alongside Revenue and Profit, including month-over-month (MoM) differences vs last month.
 3. Seasonal Revenue: Grouped Revenue by season (1-4), visually represented with Clustered Bar Chat.
