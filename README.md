@@ -1,15 +1,15 @@
-# PedalPoint Bike Riders Performance Insights and Revenue Optimization
+# PedalPoint Performance Insights and Revenue Optimization
 
 <br>
 
 ### Project Overview
 
-##### Client: PedalPoint Company LTD
-##### Project Title: PedalPoint Bike Rider Performance Insights and Revenue Optimization
+##### Client: PedalPoint LTD
+##### Project Title: PedalPoint Performance Insights and Revenue Optimization
 ##### Analyst: David Abe
 ##### Tools Used: SQL Server Management Studio (SSMS), Power BI, Excel
-##### Data Sources: PedalPoint dataset file (bike_share_yr_0.csv, bike_share_yr_1.csv, cost_table.csv)
-##### Dashboard Link: Google Drive - Dashboard Visuals
+##### Data Sources: [PedalPoint dataset file](https://drive.google.com/drive/folders/1SwM1JgknA4KKNum7R8vQZONQb4BhDNXb?usp=sharing)
+##### Dashboard Link: [Dashboard Visuals](https://drive.google.com/drive/folders/1DnbAzAgPUq-HsJZG_WAgvVxAJgIcGGHA?usp=sharing)
 ##### Refer to the PedalPoint_documentation for detailed visual and written documentation.
 
 
