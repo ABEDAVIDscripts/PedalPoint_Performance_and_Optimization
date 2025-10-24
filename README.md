@@ -209,22 +209,20 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 <BR>
 
 ### About Metrics and Business Questions Answered
-1. **Hourly Revenue Analysis:** Displayed Average Revenue per Hour across all days and filtered by weekday. <br>
-<img height="300" alt="Revenue per Hour" src="https://github.com/user-attachments/assets/2715ee64-55c4-4884-a074-fb4ec17fcb2a" />
+1. **Hourly Revenue Analysis:** Displayed Average Revenue per Hour across all days and filtered by weekday. A Tooltip to also display Profit per Hour alongside Average Revenue, visually represented by Matrix. <br>
+
+<p align="center">
+	<img width="25%" alt="Revenue per Hour" src="https://github.com/user-attachments/assets/2715ee64-55c4-4884-a074-fb4ec17fcb2a" />
+	<b style="margin: 0 50px; font-size: 20px;"> vs </b>
+	<img width="40%" alt="Revenue per Hour x Tooltip" src="https://github.com/user-attachments/assets/5c19c3e3-4a2e-405a-bf8a-cc477049c070" /> 
+</p>	
 
 <br>
-<br>
 
-- A Tooltip to also display Profit per Hour alongside Average Revenue, visually represented by Matrix. <br>
-<img height="300" alt="Revenue per Hour x Tooltip" src="https://github.com/user-attachments/assets/5c19c3e3-4a2e-405a-bf8a-cc477049c070" /> 
-
-<br>
-<br>
-
-- Explore Section vs Explore Section with Tooltip <br>
+- Explore Metrics <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ab422d5f-7c79-4098-a885-b97e7b18d354" alt="Revenue per Hour Explore Dashboard" width="45%" />
-  <b style="margin: 0 10px; font-size: 20px;">vs</b>
+  <b style="margin: 0 30px; font-size: 20px;">vs</b>
   <img src="https://github.com/user-attachments/assets/eb1a2366-eafd-45cf-bef2-6c51c0e616c8" alt="Revenue per Hour Explore with Tooltip" width="45%" />
 </p>
 
@@ -234,11 +232,25 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 <br>
 <br>
 
-2. **Riders’ Profit and Revenue Trends:** Visualized monthly and yearly using a column chart, with an integrated Tooltip that highlights Rider trends alongside Revenue and Profit, including month-over-month (MoM) differences vs last month.
+2. **Riders’ Revenue and Profit Trends:** Visualized monthly and yearly using a column chart, with an integrated Tooltip that highlights Rider trends alongside Revenue and Profit, including month-over-month (MoM) differences vs last month. <br>
 
-3. **Seasonal Revenue:** Grouped Revenue by season (1-4), visually represented with Clustered Bar Chat.
+<img width="653" height="240" alt="Riders' Profit and Revenue Trends" src="https://github.com/user-attachments/assets/5d549946-7510-45e4-af8b-a990159bd57c" />
 
-4. **Rider Demographics:** Categorized riders by rider_type (Casual vs Registered) to analyze their contribution to Total Revenue, visualized using a donut chart.
+<br>
+
+- Explore Metric
+
+<p align="center">
+  <img alt="Riders over Time Explore Dashboard" src="https://github.com/user-attachments/assets/d5efb5cc-b5cc-4135-bcab-e49ddadab384" width="45%" />
+  <b style="margin: 0 30px; font-size: 20px;">vs</b>
+  <img alt="Riders over Time Explore Page x Tooltip" src="https://github.com/user-attachments/assets/bad1854f-2229-4b45-9e20-ea2fc946c5c4" width="45%" />
+</p>
+
+
+
+4. **Seasonal Revenue:** Grouped Revenue by season (1-4), visually represented with Clustered Bar Chat.
+
+5. **Rider Demographics:** Categorized riders by rider_type (Casual vs Registered) to analyze their contribution to Total Revenue, visualized using a donut chart.
 
 <BR>
 <BR>
