@@ -1,4 +1,5 @@
 # PedalPoint Performance Insights and Revenue Optimization
+<img height="450" alt="Home Dashboard" src="https://github.com/user-attachments/assets/a9b30ee1-b588-4e06-9c88-3f5431ea7aed" />
 
 <br>
 
@@ -101,6 +102,7 @@ ADDCOLUMNS(
 
 The following created DAX measures were implemented:
 - Total Revenue
+<img width="200" alt="Total Revenue" src="https://github.com/user-attachments/assets/b416bcc3-8b6a-4b68-91bf-680232d38631" />
 
 This metric represents the total income generated from bike rides by multiplying the number of riders by the price per ride. It reflects the gross earnings before subtracting operational costs. It is a primary indicator of business scale and growth over time.
 
@@ -110,6 +112,7 @@ Total Revenue = SUM(Query1[Revenue])
 <br>
 
 - Total Profit
+<img width="200" alt="Total Profit" src="https://github.com/user-attachments/assets/19c61206-33de-4a15-ba90-40a2d676ea31" />
 
 Total Profit is the net gain after subtracting the total cost (COGS) from total revenue. In this case, we already did the calculation inside SSMS to generate Profit Column. It shows how much money the company actually retains from its operations and is key to assessing the company’s financial health.
 
@@ -119,6 +122,7 @@ Total Profit = SUM(Query1[Profit])
 <br>
 
 - Total Cost
+<img width="200" alt="Total Cost" src="https://github.com/user-attachments/assets/430f0f27-c65f-4100-86af-61d78c818ad1" />
 
 This reflects the cumulative operational expenses (Cost of Goods Sold) associated with each ride. It includes all costs tied to providing the service and is used to calculate profitability and efficiency.
 
@@ -128,6 +132,7 @@ Total Cost = SUM(Query1[Revenue]) - SUM(Query1[Profit])
 <br>
 
 - Total Riders
+<img width="200" alt="Riders" src="https://github.com/user-attachments/assets/4d0b0179-3290-4294-84cb-cf9831d29b4a" />
 
 This shows the total number of users who rented bikes over the selected period. It’s a critical metric to evaluate customer reach, engagement, and demand trends.
 
@@ -137,6 +142,7 @@ Total Rider = SUM(Query1[riders])
 <br>
 
 - Profit Margin
+<img width="200"  alt="Total Profit x profit margin" src="https://github.com/user-attachments/assets/2d0c8f2c-2812-4aa6-be9a-02e14b773e8f" />
 
 This ratio (Profit ÷ Revenue) expresses the percentage of revenue retained as profit. A high margin indicates efficient cost management and good pricing strategy. It remained stable at 68.8% across both years in the analysis.
 
@@ -146,6 +152,7 @@ Profit Margin = FORMAT(DIVIDE(SUM(Query1[Profit]), SUM(Query1[Revenue])), "0.00%
 <br>
 
 - Cost Margin
+<img width="200" height="140" alt="Total Cost x cost margin" src="https://github.com/user-attachments/assets/2bc50471-aa32-4055-99d8-926250671512" />
 
 Calculated as (Cost ÷ Revenue), this shows the portion of revenue consumed by costs. In this case, the cost margin hovered around 31.2%, indicating strong operational efficiency.
 
@@ -155,6 +162,7 @@ Cost Margin = FORMAT(DIVIDE([Total Cost], SUM(Query1[Revenue])), "0.00%")
 <br>
 
 - Cost per Rider
+<img width="200" alt="Cost per Rider" src="https://github.com/user-attachments/assets/20b7cff3-0f3d-40b7-aba2-94718b3f1e4c" />
 
 The average cost incurred to serve each individual rider. This helps evaluate whether operations are scaling efficiently with rider growth. 
 
@@ -164,6 +172,7 @@ Cost per Rider = DIVIDE((SUM(Query1[Revenue]) - SUM(Query1[Profit])), SUM(Query1
 <br>
 
 - Profit per Rider
+<img width="200" alt="Profit per Rider" src="https://github.com/user-attachments/assets/e2a498e1-f373-49c5-8b66-bd6a6228d49e" />
 
 The net earnings per rider after accounting for cost. It demonstrates how valuable each customer is to the business. Shows profit earn per user.
 
@@ -173,6 +182,7 @@ Profit per Rider = DIVIDE(SUM(Query1[Profit]), SUM(Query1[riders]))
 <br>
 
 - Cost per Unit Profit
+<img width="200" alt="Cost per Unit of Profit" src="https://github.com/user-attachments/assets/4620c8de-028c-463e-8162-37715785111a" />
 
 Shows how much cost is required to generate $1 profit. A lower value indicates higher profitability. It remained stable at $0.45, signaling operational consistency.
 
@@ -182,6 +192,7 @@ Cost per Unit Profit = DIVIDE((SUM(Query1[Revenue]) - SUM(Query1[Profit])), SUM(
 <br>
 
 - Profit per Unit Cost
+<img width="200" alt="Profit per Unit Cost" src="https://github.com/user-attachments/assets/0c1b5ea5-5e00-4b28-a5ea-58e26d4300ba" />
 
 This reflects the profit earned per dollar spent. It’s a profitability efficiency metric. A value of $2.20 means every $1 spent returns $2.20 in profit. A strong indicator of business performance.
 
@@ -198,7 +209,30 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 <BR>
 
 ### About Metrics and Business Questions Answered
-1. **Hourly Revenue Analysis:** Displayed Average Revenue per Hour across all days and filtered by weekday. Added a Tooltip to also display Profit per Hour alongside Average Revenue, visually represented by Matrix.
+1. **Hourly Revenue Analysis:** Displayed Average Revenue per Hour across all days and filtered by weekday. <br>
+<img height="300" alt="Revenue per Hour" src="https://github.com/user-attachments/assets/2715ee64-55c4-4884-a074-fb4ec17fcb2a" />
+
+<br>
+<br>
+
+- A Tooltip to also display Profit per Hour alongside Average Revenue, visually represented by Matrix. <br>
+<img height="300" alt="Revenue per Hour x Tooltip" src="https://github.com/user-attachments/assets/5c19c3e3-4a2e-405a-bf8a-cc477049c070" /> 
+
+<br>
+<br>
+
+- Explore Section vs Explore Section with Tooltip <br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ab422d5f-7c79-4098-a885-b97e7b18d354" alt="Revenue per Hour Explore Dashboard" width="45%" />
+  <b style="margin: 0 10px; font-size: 20px;">vs</b>
+  <img src="https://github.com/user-attachments/assets/eb1a2366-eafd-45cf-bef2-6c51c0e616c8" alt="Revenue per Hour Explore with Tooltip" width="45%" />
+</p>
+
+
+
+
+<br>
+<br>
 
 2. **Riders’ Profit and Revenue Trends:** Visualized monthly and yearly using a column chart, with an integrated Tooltip that highlights Rider trends alongside Revenue and Profit, including month-over-month (MoM) differences vs last month.
 
