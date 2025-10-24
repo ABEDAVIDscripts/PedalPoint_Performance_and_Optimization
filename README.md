@@ -1,5 +1,8 @@
 # PedalPoint Performance Insights and Revenue Optimization
-<img height="450" alt="Home Dashboard" src="https://github.com/user-attachments/assets/a9b30ee1-b588-4e06-9c88-3f5431ea7aed" />
+
+<p align="center">
+<img height="400" alt="Home Dashboard" src="https://github.com/user-attachments/assets/a9b30ee1-b588-4e06-9c88-3f5431ea7aed" />
+</p>
 
 <br>
 
@@ -10,8 +13,7 @@
 ##### Analyst: David Abe
 ##### Tools Used: SQL Server Management Studio (SSMS), Power BI, Excel
 ##### Data Sources: [PedalPoint dataset file](https://drive.google.com/drive/folders/1SwM1JgknA4KKNum7R8vQZONQb4BhDNXb?usp=sharing)
-##### Dashboard Link: [Dashboard Visuals](https://drive.google.com/drive/folders/1DnbAzAgPUq-HsJZG_WAgvVxAJgIcGGHA?usp=sharing)
-##### Refer to the PedalPoint_documentation for detailed visual and written documentation.
+
 
 
 <br>
@@ -234,7 +236,9 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 
 2. **Riders’ Revenue and Profit Trends:** Visualized monthly and yearly using a column chart, with an integrated Tooltip that highlights Rider trends alongside Revenue and Profit, including month-over-month (MoM) differences vs last month. <br>
 
-<img width="653" height="240" alt="Riders' Profit and Revenue Trends" src="https://github.com/user-attachments/assets/5d549946-7510-45e4-af8b-a990159bd57c" />
+<p align="center">
+	<img width="700" alt="Riders' Profit and Revenue Trends" src="https://github.com/user-attachments/assets/5d549946-7510-45e4-af8b-a990159bd57c" />
+</p>
 
 <br>
 
@@ -246,11 +250,24 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
   <img alt="Riders over Time Explore Page x Tooltip" src="https://github.com/user-attachments/assets/bad1854f-2229-4b45-9e20-ea2fc946c5c4" width="45%" />
 </p>
 
+<br>
+<br>
 
+3. **Seasonal Revenue:** Grouped Revenue by season (1-4), visually represented with Bar Chat.
 
-4. **Seasonal Revenue:** Grouped Revenue by season (1-4), visually represented with Clustered Bar Chat.
+<p align="center">
+	<img width="309" height="226" alt="Revenue per Season" src="https://github.com/user-attachments/assets/74331a7e-1129-4eb6-95e8-a22a7bb6c738" />
+</p>
 
-5. **Rider Demographics:** Categorized riders by rider_type (Casual vs Registered) to analyze their contribution to Total Revenue, visualized using a donut chart.
+<br>
+<br>
+
+4. **Rider Demographics:** Categorized riders by rider_type (Casual vs Registered) to analyze their contribution to Total Revenue, visualized using a donut chart.
+
+<P ALIGN="CENTER">
+	<img width="314" height="239" alt="Rider Demographics" src="https://github.com/user-attachments/assets/c7bfa95c-16ea-4047-9d4f-a93101ad9c08" />
+</P>
+
 
 <BR>
 <BR>
@@ -259,8 +276,8 @@ Custom DAX measures were developed to calculate core KPIs (e.g., Total Revenue, 
 
 #### Data Insight Snapshot
 
-| Metric                 | 2021      | 2022     | Total 	   |
-|------------------------|-----------|--------- |------------------|
+| Metric                 | 2021      | 2022     | Total			   |
+|:-----------------------|:----------|:-------- |:-----------------|
 | Total Revenue          | $4.96M    | $10.23M  | $15.19M          |
 | Total Profit           | $3.42M    | $7.03M   | $10.45M          |
 | Total Cost             | $1.54M    | $3.20M   | $4.74M           |
@@ -390,8 +407,5 @@ Based on working day format:
 
 <BR>
 <BR>
-
-**Refer to the PedalPoint_documentation for detailed visual and written documentation.**
-
 <br>
 
